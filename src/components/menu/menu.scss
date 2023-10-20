@@ -1,0 +1,232 @@
+.menu {
+  &__wrapper {
+    position: absolute;
+    width: 380px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #86D3F4;
+  }
+
+  &__wrap {
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: #000000;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 13px;
+  }
+
+  &__phoneNumber {
+    border: none;
+    background: transparent;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+
+    &:focus {
+      border: none;
+      background: transparent;
+    }
+  }
+
+  &__subtext {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 13px;
+    margin-bottom: 20px;
+  }
+
+  &__phoneButtons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 24px;
+
+    button {
+      width: 88px;
+
+      padding: 12px 30px;
+      border: 2px solid #000;
+      background: transparent;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:active {
+        background: #000;
+        color: #FFFFFF;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  &__agreement {
+    display: flex;
+
+    input {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      margin-left: 24px;
+      margin-top: 39px;
+    }
+
+    label {
+      margin-left: 24px;
+      margin-top: 45px;
+      font-size: 14px;
+      color: #565656;
+      font-weight: 400;
+      text-align: center;
+    }
+
+  }
+
+  &__clear {
+    flex: 0.8;
+  }
+
+  &__confirmButton {
+    margin-left: 24px;
+    margin-top: 13px;
+    height: 52px;
+    padding: 16px 19px;
+    background: transparent;
+    border: 1px solid #4E4E4E;
+    color: #4E4E4E;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  &__good {
+    margin-top: 100%;
+  }
+
+  &__success {
+    text-align: center;
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__descr {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+ 
+}
+
+.qrCode {
+
+  &__wrapper {
+    position: absolute;
+    top: 40%;
+    padding: 30px 10px 10px;
+    background: #86D3F4;
+    right: 0;
+  }
+  &__container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 30px;
+    right: 20px;
+
+    p {
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-align: center;
+      margin-right: 10px;
+    }
+  }
+
+
+  &__title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__descr {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    display: block;
+    width: 156px;
+    height: 52px;
+    margin: 0 auto;
+    padding: 16px;
+    background: #000;
+    color: #86D3F4;
+    border: none;
+    cursor: pointer;
+  }
+  &__closeMenu {
+    position: absolute;
+    width: 88px;
+    height: 52px;
+    font-size: 40px;
+    right: 20px;
+    top: 20px;
+    background: #FFFFFF;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.error {
+  border: none;
+  background: transparent;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: red;
+
+  &:focus {
+    border: none;
+    background: transparent;
+  }
+
+  &__message {
+    color: red;
+    margin-top: 40px;
+  }
+}
+
+.notCorrectPhoneNumber {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #EA0000;
+  text-align: center;
+  margin-top: 33px;
+}
